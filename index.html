@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo-Js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent_container">
+      <div class="shadow">
+        <div class="nav_container">
+          <div class="left_nav">
+            <h1 id="heading">Tasks</h1>
+            <h1 id="heading1">Lists</h1>
+          </div>
+          <div class="right_nav">
+            <div>
+              <button class="add_button">
+                <img src="./images/add-icon-40px.png" class="image" />
+                <h1 id="heading2">Add List</h1>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="middle_container">
+          <div id="list_container">
+            <h1 id="list_container_text">Empty_task_list</h1>
+          </div>
+        </div>
+      </div>
+      <div class="new_list_container">
+        <div class="add_new_list">
+          Add New List
+          <input type="text" id="add_new_textbox" />
+          <input type="submit" value="ADD" id="add_list_button" />
+          <input type="submit" value="BACK" id="back_list_button" />
+        </div>
+      </div>
+    </div>
+    <div class="div_box">
+      <div class="shadow">
+        <header class="header3">
+          <div class="task_div_box">
+            <div class="heading_div_box1">
+              <hr id="hr_left" />
+            </div>
+            <div class="middle_div_box">
+              <h1 id="show_task"></h1>
+            </div>
+            <div class="heading_div_box2">
+              <hr id="hr_right" />
+            </div>
+          </div>
+          <div class="back_button_url">
+            <button class="class_back_button">
+              <img
+                src="./images/back-arrow-40px.png"
+                style="padding: 5px"
+                class="back_arrow"
+              />
+              <h2 id="id_back_button">Back</h2>
+            </button>
+          </div>
+        </header>
+        <div class="new_task_container">
+          <div class="new_task_box">
+            <div class="new_task_box1"></div>
+            <hr class="task_hr" />
+            <ul class="newtask_list"></ul>
+            <button class="add_new_task" onclick="newItemToggle(this)">
+              <img src="./images/add-icon-50px.png" class="task_add_image" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item_add_container">
+      <div class="add_new_item">
+        Add New Item
+        <input type="text" id="add_textbox" />
+        <input
+          type="submit"
+          value="ADD"
+          id="add_item_button"
+          onclick="newItemToggle(this)"
+        />
+        <input
+          type="submit"
+          value="BACK"
+          id="back_item_button"
+          onclick="newItemToggle(this)"
+        />
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
